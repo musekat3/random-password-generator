@@ -19,17 +19,17 @@ function generatePassword() {
 
 window.alert("Password Criteria");
 
-let person = prompt("How many characters does your password need to be from 8 to 128?")
-let text; 
-
 var confirmLength = ""; 
 
-if (confirmLength < 8 || confirmLength > 128) {
-  alert("Password length must be between 8 and 128 characters. Try again.");
-  var confirmLength = (prompt("How many characters does your like your password need to be from 8 to 128?"));
+alert("How many characters does your password need to be from 8 to 128 characters?");
+var confirmLength = (prompt("Put in a number from 8 to 128 to generate a password"));
+
+if(confirmLength < 8 || confirmLength > 128) {
+  alert("Plese Try Again"); 
+  var confirmLength = (prompt("Put in a number from 8 to 128 to generate a password")); 
 }
 
-var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
+var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()?"; 
 var passwordLength = confirmLength;
 var password = ""; 
 
