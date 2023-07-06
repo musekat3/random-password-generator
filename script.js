@@ -29,6 +29,11 @@ if(confirmLength < 8 || confirmLength > 128) {
   var confirmLength = (prompt("Put in a number from 8 to 128 to generate a password")); 
 }
 
+confirm("Do you want lowercase letters?");
+confirm("Do you want uppercase letters?");
+confirm("Do you want numbers?");
+confirm("Do you want special characters?");
+
 var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()?"; 
 var passwordLength = confirmLength;
 var password = ""; 
